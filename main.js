@@ -14,7 +14,7 @@ const sampleArray = [
 //SETUP
 const sections = [];
 
-for(let i = 0; i < 18; i++) {
+for(let i = 0; i < 23; i++) {
     let heading = document.createElement('h3');
     let section = document.createElement('section');
     heading.append(`KATA ${i+1}`);
@@ -158,3 +158,55 @@ sections[16].append(kata17answer);
 let kata18answer = document.createElement('div');
 kata18answer.append(Math.max(...sampleArray));
 sections[17].append(kata18answer);
+
+//KATA 19
+for(let i = 0; i < 20; i++) {
+    let rect = document.createElement('div');
+    rect.style.height = '20px';
+    rect.style.width = '100px';
+    rect.style.backgroundColor = 'gray';
+    sections[18].append(rect);
+}//end for
+
+//KATA 20
+for(let i = 1; i <= 20; i++) {
+    let rect = document.createElement('div');
+    rect.style.height = '20px';
+    rect.style.width = `${100 + 5*i}px`;
+    rect.style.backgroundColor = 'gray';
+    sections[19].append(rect);
+}//end for
+
+//KATA 21
+for(let value of sampleArray) {
+    let rect = document.createElement('div');
+    rect.style.height = '20px';
+    rect.style.width = `${value}px`;
+    rect.style.backgroundColor = 'gray';
+    sections[20].append(rect);
+}//end for
+
+//KATA 22
+for(let i = 0; i < sampleArray.length; i++) {
+    let rect = document.createElement('div');
+    rect.style.height = '20px';
+    rect.style.width = `${sampleArray[i]}px`;
+    if(i % 2 !== 0) {
+        rect.style.backgroundColor = 'red';
+    } else {
+        rect.style.backgroundColor = 'gray';
+    }//end if/else
+    sections[21].append(rect);
+}//end for
+
+for(let i = 0; i < sampleArray.length; i++) {
+    let rect = document.createElement('div');
+    rect.style.height = '20px';
+    rect.style.width = `${sampleArray[i]}px`;
+    if(sampleArray[i] % 2 === 0) {
+        rect.style.backgroundColor = 'red';
+    } else {
+        rect.style.backgroundColor = 'gray';
+    }//end if/else
+    sections[22].append(rect);
+}//end for

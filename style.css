@@ -8,9 +8,11 @@ body {
 
 section {
     display: flex;
+    flex-wrap: wrap;
 }
 
 section div {
     border: 1px dotted lightgray;
     margin-right: 3px;
+    margin-bottom: 3px;
 }
