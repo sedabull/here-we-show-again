@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    display: flex;
+}
+
+section div {
+    border: 1px dotted lightgray;
+    margin-right: 3px;
+}
